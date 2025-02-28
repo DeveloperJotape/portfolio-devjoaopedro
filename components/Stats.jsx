@@ -4,11 +4,11 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    num: 3,
+    num: 5,
     text: "Anos de experiêcnia",
   },
   {
-    num: 2,
+    num: 15,
     text: "Projetos concluídos",
   },
   {
@@ -36,7 +36,7 @@ const Stats = () => {
                 />
                 <p
                   className={`${
-                    item.text.length < 15 ? "max-w-[100px]" : "mxa-w-[150px]"
+                    item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
                   } leading-snug text-white/80`}
                 >
                   {item.text}
