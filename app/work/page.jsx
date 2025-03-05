@@ -199,6 +199,7 @@ const Work = () => {
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
+                          alt="Imagem"
                           fill
                           className="object-cover"
                         />
