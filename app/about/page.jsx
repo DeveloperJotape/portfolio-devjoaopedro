@@ -12,9 +12,9 @@ import {
   SiJavascript,
   SiGithub,
   SiMysql,
-  SiPostgresql,
   SiWordpress,
   SiElementor,
+  SiFigma,
 } from "react-icons/si";
 import {
   RiNextjsFill,
@@ -32,7 +32,7 @@ const experience = {
   icon: "",
   title: "Minhas experiências",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eum? Earum neque asperiores magnam aut velit voluptatibus voluptate repudiandae blanditiis.",
+    "Minha trajetória une execução técnica e visão de negócios: desde a criação de sites otimizados até sistemas complexos, sempre com foco em resolver problemas reais.",
   items: [
     {
       company: "ASSEMDF",
@@ -52,12 +52,12 @@ const education = {
   icon: "",
   title: "Formação",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eum? Earum neque asperiores magnam aut velit voluptatibus voluptate repudiandae blanditiis.",
+    "Base acadêmica sólida em Engenharia de Software complementada por certificações práticas.",
   items: [
     {
       institution: "UNICEPLAC",
       course: "Engenharia de Software",
-      duration: "2021 - 2025",
+      duration: "2021 - Atualmente",
     },
     {
       institution: "Escola Técnica de Brasília",
@@ -66,7 +66,7 @@ const education = {
     },
     {
       institution: "UNICEPLAC",
-      course: "Desenvolvimento de API's REST",
+      course: "Curso de desenvolvimento de API's REST",
       duration: "2022",
     },
   ],
@@ -76,7 +76,7 @@ const education = {
 const skills = {
   title: "Tecnologias",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eum? Earum neque asperiores magnam aut velit voluptatibus voluptate repudiandae blanditiis.",
+    "Stack principal centrada em soluções: Java Spring para lógica de negócios, Next.js para frontend moderno e MySQL para gestão de dados crítica.",
   items: [
     {
       icon: <RiJavaLine />,
@@ -101,6 +101,10 @@ const skills = {
     {
       icon: <SiElementor />,
       name: "Elementor",
+    },
+    {
+      icon: <SiFigma />,
+      name: "Figma",
     },
     {
       icon: <SiMysql />,
@@ -129,7 +133,7 @@ const skills = {
 const about = {
   title: "Sobre mim",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eum? Earum neque asperiores magnam aut velit voluptatibus voluptate repudiandae blanditiis.",
+    "Minha jornada reflete a evolução de um técnico para engenheiro: da manutenção de sites em WordPress ao design de APIs empresariais, sempre aplicando princípios de engenharia de requisitos.",
   info: [
     {
       fieldName: "Nome",
@@ -147,10 +151,6 @@ const about = {
     {
       fieldName: "Experiência",
       fieldValue: "+3 anos",
-    },
-    {
-      fieldName: "Contratações",
-      fieldValue: "Disponível",
     },
     {
       fieldName: "Idiomas",
@@ -177,7 +177,7 @@ const About = () => {
             <TabsTrigger value="experience">
               Experiências Profissionais
             </TabsTrigger>
-            <TabsTrigger value="education">Educação</TabsTrigger>
+            <TabsTrigger value="education">Formação</TabsTrigger>
             <TabsTrigger value="skills">Tecnologias</TabsTrigger>
             <TabsTrigger value="about">Sobre mim</TabsTrigger>
           </TabsList>
@@ -231,7 +231,7 @@ const About = () => {
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="text-xl max-w-[300px] min-h-[50px] text-center lg:text-left">
                             {item.course}
                           </h3>
                           <div className="flex items-center gap-3">

@@ -35,8 +35,14 @@ const Home = () => {
               <span className="text-accent">João Pedro</span>.
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Me destaco no desenvolvimento de aplicações FullStack, com
-              experiência em diversas linguagens de programação e tecnologias.
+              Engenheiro de Software especializado em construir sistemas
+              escaláveis e arquiteturas sustentáveis. Combino fundamentos
+              acadêmicos sólidos com experiência prática em desenvolvimento
+              FullStack para entregar soluções que equilibram requisitos
+              técnicos e de negócio. <br />
+              <span className="text-white">
+                Java | Spring Boot | Next.js | MySQL.
+              </span>
             </p>
             {/* Links e botões */}
             <div className=" flex flex-col xl:flex-row items-center gap-8">
