@@ -13,13 +13,22 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Dev João Pedro",
+  title: "João Pedro - Engenheiro de Software",
   description: "",
+  icons: [
+    {
+      url: "/favicon.ico",
+      type: "image/x-icon",
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+      <head>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className={jetbrainsMono.variable}>
         <Header />
         <StairTransition />
