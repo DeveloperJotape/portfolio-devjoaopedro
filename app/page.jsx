@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
@@ -9,6 +11,18 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
 const Home = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/assets/cv/resume.pdf";
+
+    link.download = "Joao_Pedro_Nascimento_Curriculo.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="h-full">
       <div className="container mx-auto">
@@ -30,10 +44,12 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
               >
                 <span>Baixar Currículo </span>
                 <Download className="text-xl" />
               </Button>
+
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
