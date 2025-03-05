@@ -9,12 +9,12 @@ import {
 
 import {
   SiSpringboot,
-  SiPhp,
-  SiNestjs,
   SiJavascript,
   SiGithub,
   SiMysql,
   SiPostgresql,
+  SiWordpress,
+  SiElementor,
 } from "react-icons/si";
 import {
   RiNextjsFill,
@@ -79,6 +79,10 @@ const skills = {
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eum? Earum neque asperiores magnam aut velit voluptatibus voluptate repudiandae blanditiis.",
   items: [
     {
+      icon: <RiJavaLine />,
+      name: "Java",
+    },
+    {
       icon: <SiSpringboot />,
       name: "Springboot",
     },
@@ -91,16 +95,20 @@ const skills = {
       name: "TailwindCss",
     },
     {
-      icon: <RiJavaLine />,
-      name: "Java",
+      icon: <SiWordpress />,
+      name: "Wordpress",
     },
     {
-      icon: <SiPhp />,
-      name: "PHP",
+      icon: <SiElementor />,
+      name: "Elementor",
     },
     {
-      icon: <SiNestjs />,
-      name: "NestJS",
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
+    {
+      icon: <SiGithub />,
+      name: "Github",
     },
     {
       icon: <RiHtml5Fill />,
@@ -113,18 +121,6 @@ const skills = {
     {
       icon: <SiJavascript />,
       name: "JavaScript",
-    },
-    {
-      icon: <SiMysql />,
-      name: "MySQL",
-    },
-    {
-      icon: <SiPostgresql />,
-      name: "Postgresql",
-    },
-    {
-      icon: <SiGithub />,
-      name: "Github",
     },
   ],
 };
@@ -150,7 +146,7 @@ const about = {
 
     {
       fieldName: "Experiência",
-      fieldValue: "+6 anos",
+      fieldValue: "+3 anos",
     },
     {
       fieldName: "Contratações",
