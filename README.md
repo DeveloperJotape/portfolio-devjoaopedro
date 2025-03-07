@@ -7,8 +7,6 @@ Portfólio profissional desenvolvido com Next.js 14, apresentando minha jornada 
 
 **Acesse:** [portfolio-devjoaopedro.vercel.app](https://portfolio-devjoaopedro.vercel.app/)
 
-![Preview do Portfólio](public/assets/portfolio.jpg) <!-- Adicione uma imagem de preview -->
-
 ## ✨ Funcionalidades
 
 - ✅ Apresentação profissional responsiva
