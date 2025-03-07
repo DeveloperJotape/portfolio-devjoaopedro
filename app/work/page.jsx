@@ -20,53 +20,48 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "Projeto 01",
+    category: "backend",
+    title: "Sistema interno de chamados",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci autem rerum iusto. A mollitia earum dignissimos expedita hic corrupti veritatis.",
+      "Sistema interno de chamados desenvolvido para a ASSEMDF. Será um sistema onde um colaborador poderá abrir um ticket e direcionar para outro colaborador.",
     stack: [
-      {
-        name: "HTML5",
-      },
-      {
-        name: "CSS3",
-      },
-      {
-        name: "JavaScript",
-      },
-    ],
-    image: "/assets/projects/img01.jpg", //assets/criar pasta
-    live: "",
-    github: "",
-  },
-  {
-    num: "02",
-    category: "frontend",
-    title: "Projeto 02",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci autem rerum iusto. A mollitia earum dignissimos expedita hic corrupti veritatis.",
-    stack: [
-      {
-        name: "NEXTJS",
-      },
       {
         name: "Springboot",
       },
+      {
+        name: "NextJS",
+      },
+      {
+        name: "Mysql",
+      },
     ],
-    image: "/assets/projects/img02.jpg", //assets/criar pasta
-    live: "",
-    github: "",
+    image: "/assets/projects/chamados.jpg", //assets/criar pasta
+    live: "https://github.com/DeveloperJotape/helpdesk-frontend",
+    github: "https://github.com/DeveloperJotape/helpdesk",
+  },
+  {
+    num: "02",
+    category: "backend",
+    title: "Plugin de consórcio",
+    description:
+      "Plugin desenvolvido para gerenciar cartas de consórcio de automóveis e imóveis no WordPress, com integração ao Elementor.",
+    stack: [
+      {
+        name: "PHP",
+      },
+    ],
+    image: "/assets/projects/mundoconsorcio.jpg", //assets/criar pasta
+    live: "https://mundodoconsorcio.com.br/",
+    github:
+      "https://github.com/DeveloperJotape/Gerenciador-de-cartas-contempladas",
   },
   {
     num: "03",
     category: "frontend",
-    title: "Projeto 03",
+    title: "Site - ASSEMDF",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci autem rerum iusto. A mollitia earum dignissimos expedita hic corrupti veritatis.",
+      "Site desenvolvido para a ASSEMDF. Conta com layout moderno e intuitivo, além de responsividade para todos os tipos de dispositivos.",
     stack: [
-      {
-        name: "Figma",
-      },
       {
         name: "Wordpress",
       },
@@ -74,29 +69,8 @@ const projects = [
         name: "Elementor",
       },
     ],
-    image: "/assets/projects/img03.jpg", //assets/criar pasta
-    live: "",
-    github: "",
-  },
-  {
-    num: "04",
-    category: "backend",
-    title: "Projeto 04",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci autem rerum iusto. A mollitia earum dignissimos expedita hic corrupti veritatis.",
-    stack: [
-      {
-        name: "Springboot",
-      },
-      {
-        name: "Docker",
-      },
-      {
-        name: "AWS",
-      },
-    ],
-    image: "/assets/projects/img04.jpg", //assets/criar pasta
-    live: "",
+    image: "/assets/projects/assemdf.jpg", //assets/criar pasta
+    live: "https://assemdf.com/",
     github: "",
   },
 ];
@@ -134,7 +108,7 @@ const Work = () => {
               </div>
               {/* Categoria */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                Projeto {project.category}
+                {project.title}
               </h2>
               {/* Descrição */}
               <p className="text-white/60">{project.description}</p>
