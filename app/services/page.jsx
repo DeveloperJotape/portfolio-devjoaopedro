@@ -5,24 +5,24 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Criação de sites",
+    title: "Desenvolvimento Frontend",
     description:
-      "Criação de interfaces responsivas e performáticas com Next.js e Tailwind CSS. Do protótipo no Figma à implementação final, garanto experiências de usuário fluidas e alinhadas às melhores práticas de mercado.",
-    href: "",
+      "Criação de interfaces responsivas e performáticas. Do protótipo à implementação final, garanto experiências de usuário fluidas e alinhadas às melhores práticas de mercado.",
+    href: "https://wa.me/5561986530748?text=Olá,%20gostaria%20de%20contratar%20seus%20serviços%20de%20desenvolvedor%20frontend",
   },
   {
     num: "02",
-    title: "Engenharia de Backend",
+    title: "Desenvolvimento Backend",
     description:
-      "Construção de APIs RESTful escaláveis com Java e Spring Boot. Sistemas seguros, documentados e preparados para integrações complexas.",
-    href: "",
+      "Construção de APIs RESTful escaláveis. Sistemas seguros, documentados e preparados para integrações complexas.",
+    href: "https://wa.me/5561986530748?text=Olá,%20gostaria%20de%20contratar%20seus%20serviços%20de%20desenvolvedor%20backend",
   },
   {
     num: "03",
-    title: "Modernização de Sistemas",
+    title: "Desenvolvimento Fullstack",
     description:
-      "Modernização de aplicações herdadas: performance tuning, refatoração de código e migração para arquiteturas cloud-ready. Transformo sistemas obsoletos em ativos competitivos.",
-    href: "",
+      "Desenvolvimento completo de sistemas, desde o layout atrativo à segurança da sua aplicação.",
+    href: "https://wa.me/5561986530748?text=Olá,%20gostaria%20de%20contratar%20seus%20serviços%20de%20desenvolvedor%20fullstack",
   },
 ];
 
