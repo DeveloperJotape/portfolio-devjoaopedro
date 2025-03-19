@@ -24,7 +24,7 @@ const links = [
   },
   {
     name: "contato",
-    path: "/contact",
+    path: "https://wa.me/5561986530748?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio!",
   },
 ];
 
